@@ -4,3 +4,5 @@
 #################################
 ln -s /home/felix/02-Git/git/dotfiles/vim/.vimrc /home/felix/.vimrc
 echo "vim dotfile symlink created"
+ln -s /home/felix/02-Git/git/dotfiles/i3/config /home/felix/.i3/config
+echo "i3 config file symlink created"
