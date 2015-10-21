@@ -7,6 +7,7 @@
 
 platform=$(uname);
 
+# check operating system
 if [ $platform == 'Linux' ];then
 		echo "its linux!"
 		ln -s /home/felix/02-Git/git/dotfiles/vim/.vimrc /home/felix/.vimrc
@@ -14,11 +15,11 @@ if [ $platform == 'Linux' ];then
 		ln -s /home/felix/02-Git/git/dotfiles/i3/config /home/felix/.i3/config
 		echo "i3 done!"
 		# TODO! copy i3status to /etc/i3status
+
 #else 
 #	if [ $platform == 'Darwin' ]; then
 #	echo "its OSX!"
 #else
 #	echo "maybe m$?!"
 fi
-
 echo "finished!"
