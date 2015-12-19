@@ -2,8 +2,6 @@
 #################################
 # Symlinks creator by Felix Bello
 #################################
-#ln -s /home/felix/02-Git/git/dotfiles/i3/i3status.conf /etc/i3status.conf
-#echo "i3status config file symlink created"
 
 platform=$(uname);
 
@@ -17,7 +15,9 @@ if [ $platform == 'Linux' ];then
 		# TODO! copy i3status to /etc/i3status
 
 elif [ $platform == 'Darwin' ]; then
-	echo "its OSX!"
+	echo "its OSX, lets do it!"
+	ln -s /Users/felix/02-git/git/dotfiles/vim/.vimrc /Users/felix/.vim
+	echo "vim done!"
 #else
 #	echo "maybe m$?!"
 fi
