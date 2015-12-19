@@ -16,9 +16,8 @@ if [ $platform == 'Linux' ];then
 		echo "i3 done!"
 		# TODO! copy i3status to /etc/i3status
 
-#else 
-#	if [ $platform == 'Darwin' ]; then
-#	echo "its OSX!"
+elif [ $platform == 'Darwin' ]; then
+	echo "its OSX!"
 #else
 #	echo "maybe m$?!"
 fi
