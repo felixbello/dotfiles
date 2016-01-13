@@ -152,3 +152,6 @@ bar {
 	position top
         status_command i3status
 }
+
+# start automatically following apps
+exec owncloud
