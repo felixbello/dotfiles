@@ -16,7 +16,7 @@ if [ $platform == 'Linux' ];then
 
 elif [ $platform == 'Darwin' ]; then
 	echo "its OSX, lets do it!"
-	ln -s /Users/felix/02-git/git/dotfiles/vim/.vimrc /Users/felix/.vim
+	ln -s /Users/felix/02-Git/product/dotfiles/vim/.vimrc /Users/felix/.vim
 	echo "vim done!"
 #else
 #	echo "maybe m$?!"
