@@ -23,3 +23,6 @@ syntax on
 " sorting
 vnoremap <Leader>s :sort<CR>
 
+" move code block
+vnoremap < <gv
+vnoremap > >gv
