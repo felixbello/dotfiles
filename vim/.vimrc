@@ -16,6 +16,11 @@ let mapleader = ","
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 
+" backup files
+set nobackup
+set nowritebackup
+set noswapfile
+
 " Coder Settings
 " ===========================
 syntax on
