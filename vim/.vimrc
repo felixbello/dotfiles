@@ -1,5 +1,12 @@
+" General Settings
+" ============================
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc %
+
 " Show Line numbers
 set number
 
-" Automatic reload of .vimrc
-autocmd! bufwritepost .vimrc source %
+" Coder Settings
+" ===========================
+syntax on
+
