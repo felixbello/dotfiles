@@ -14,8 +14,12 @@ let mapleader = ","
 
 " movement
 map <Leader>n <esc>:tabprevious<CR>
-map <Leader>n <esc>:tabnext<CR>
+map <Leader>m <esc>:tabnext<CR>
 
 " Coder Settings
 " ===========================
 syntax on
+
+" sorting
+vnoremap <Leader>s :sort<CR>
+
