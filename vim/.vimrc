@@ -27,6 +27,8 @@ vnoremap <Leader>s :sort<CR>
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set shiftround
+set expandtab
 
 " move code block
 vnoremap < <gv
