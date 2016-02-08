@@ -23,6 +23,7 @@ set noswapfile
 
 " Coder Settings
 " ===========================
+" Syntax
 syntax on
 
 " sorting
