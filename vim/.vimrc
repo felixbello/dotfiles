@@ -23,6 +23,11 @@ syntax on
 " sorting
 vnoremap <Leader>s :sort<CR>
 
+" style
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
 " move code block
 vnoremap < <gv
 vnoremap > >gv
