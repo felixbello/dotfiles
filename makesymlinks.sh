@@ -24,12 +24,12 @@ if [ $platform == 'Linux' ];then
 	fi
 		elif [ $platform == 'Darwin' ]; then
 			echo "its OSX, lets do it!"
-			ln -s /Users/felix/02-Git/product/dotfiles/vim/.vimrc /Users/felix/.vimrc
-    			ln -s /Users/felix/02-Git/product/dotfiles/productvim/.vim/bundle  /Users/felix/.vim
-    			cd /Users/felix/02-Git/product/dotfiles/vim/.vim/bundle
+			ln -s /Users/$USER/02-Git/product/dotfiles/vim/.vimrc /Users/$USER/.vimrc
+    			ln -s /Users/$USER/02-Git/product/dotfiles/productvim/.vim/bundle  /Users/$USER/.vim
+    			cd /Users/$USER/02-Git/product/dotfiles/vim/.vim/bundle
     			git clone https://github.com/kien/ctrlp.vim.git
     			git clone https://github.com/klen/python-mode
-    			cd /Users/felix/02-Git/product/dotfiles/vim/.vim/ftplugin
+    			cd /Users/$USER/02-Git/product/dotfiles/vim/.vim/ftplugin
 			echo "vim done!"
 #else
 #	echo "maybe m$?!"
