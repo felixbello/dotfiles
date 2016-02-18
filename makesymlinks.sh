@@ -23,6 +23,10 @@ elif [ $platform == 'Darwin' ]; then
     git clone https://github.com/klen/python-mode
     cd /Users/felix/02-Git/product/dotfiles/vim/.vim/ftplugin
 	echo "vim done!"
+
+    echo "some bash dotfiles"
+    ln -s /Users/felix/02-Git/product/dotfiles/osx/bash_profile /Users/felix/.bash_profile
+    echo "bash dotfiles done"
 #else
 #	echo "maybe m$?!"
 fi
