@@ -32,6 +32,7 @@ else
     			cd /Users/$USER/02-Git/product/dotfiles/vim/.vim/ftplugin
 			echo "vim done!"
             echo "some bash dotfiles"
+            brew install bash-completion
             ln -s /Users/felix/02-Git/product/dotfiles/osx/bash_profile /Users/felix/.bash_profile
             echo "bash dotfiles done"
 #else
