@@ -10,6 +10,9 @@ export LC_ALL=en_US.UTF-8
 # added by Anaconda2 4.0.0 installer
 export PATH="/Users/felix/anaconda/bin:$PATH"
 
+# added for Android
+export PATH="/Users/felix/Library/Android/sdk/platform-tools":$PATH
+
 # Colored Bash
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
