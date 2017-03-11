@@ -32,6 +32,7 @@ else
         rm -rf /home/$USER/.vimrc
 		ln -s /home/$USER/02-Git/product/dotfiles/vim/.vimrc	/home/$USER/.vimrc
 		echo "vim done!"
+        vim()
         rm -rf /home/$USER/.i3/config
 		if [[ $host == "cymac-deb8-x64-div" ]];then
             echo "Seems to be an Virtual Machine...." 
@@ -60,3 +61,10 @@ else
 
 fi
 echo "finished!"
+
+function vim{
+    if [ $(dpkg-query -W -f='${Status}' vim 2>/dev/null | grep -c "ok installed") -eq 0 ];
+    then
+        apt-get install vim;
+    fi
+}
