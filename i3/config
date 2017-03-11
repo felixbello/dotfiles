@@ -155,3 +155,6 @@ bar {
 
 # start automatically following apps
 exec owncloud
+
+# mouse settings
+xset mouse 1 0
