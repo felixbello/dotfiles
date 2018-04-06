@@ -32,7 +32,7 @@ else
         rm -rf /home/$USER/.vimrc
 		ln -s /home/$USER/02-Git/product/dotfiles/vim/.vimrc	/home/$USER/.vimrc
 		echo "vim done!"
-        vim()
+        # vim()
         rm -rf /home/$USER/.i3/config
 		if [[ $host == "cymac-deb8-x64-div" ]];then
             echo "Seems to be an Virtual Machine...." 
@@ -54,8 +54,14 @@ else
 			echo "vim done!"
             echo "some bash dotfiles"
             brew install bash-completion
-            ln -s /Users/felix/02-Git/product/dotfiles/osx/bash_profile /Users/felix/.bash_profile
+            ln -s /Users/felix/02-Git/product/dotfiles/osx/zsh_profile /Users/felix/.zshrc
             echo "bash dotfiles done"
+	    echo "installing iterm2"
+	    brew install iterm2
+	    echo "installing oh my zsh"
+	    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
 #else
 #	echo "maybe m$?!"
 
