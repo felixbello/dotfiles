@@ -4,9 +4,14 @@
 #################################
 
 platform=$(uname);
-host=$(hostname)
+host=$(hostname);
 
 # check operating system
+if [ shell == 'bash' ];then
+    echo "Using Bash"
+if [ shell == 'zsh' ];then
+    echo "Using Zsh"
+
 if [ $platform == 'Linux' ];then
 	if [ $USER == 'root' ];then
 		echo "U're root!! That's Danger!!"
@@ -64,13 +69,6 @@ else
 
 #else
 #	echo "maybe m$?!"
-
+    exit 0
 fi
 echo "finished!"
-
-function vim{
-    if [ $(dpkg-query -W -f='${Status}' vim 2>/dev/null | grep -c "ok installed") -eq 0 ];
-    then
-        apt-get install vim;
-    fi
-}

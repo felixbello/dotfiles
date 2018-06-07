@@ -2,6 +2,7 @@
 " ============================
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc %
+au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 
 " Copy & Paste
 set clipboard=unnamed
