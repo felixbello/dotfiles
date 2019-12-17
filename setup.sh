@@ -14,4 +14,12 @@ function vim (){
     fi
 }
 
-echo "testing"
+function welcome_msg () {
+    echo "################################################################"
+    echo "#"
+    echo "# Welcome to the Setup process for new Computer Systems @ BECiT"
+    echo "#"
+    echo "################################################################"
+}
+
+welcome_msg
