@@ -17,7 +17,7 @@ function vim (){
 function welcome_msg () {
     echo "################################################################"
     echo "#"
-    echo "# Welcome to the Setup process for new Computer Systems"
+    echo "# Welcome to the Setup process for a new Computer Systems"
     echo "#"
     echo "################################################################"
 }
