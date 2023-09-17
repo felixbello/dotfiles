@@ -1,7 +1,7 @@
 #!/bin/bash
-#################################
-# Symlinks creator by Felix Bello
-#################################
+######################################
+# Setup for new Systems by Felix Bello
+######################################
 
 platform=$(uname);
 host=$(hostname)
@@ -23,3 +23,5 @@ function welcome_msg () {
 }
 
 welcome_msg
+
+echo $platform
