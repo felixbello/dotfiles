@@ -15,13 +15,32 @@ function vim (){
 }
 
 function welcome_msg () {
-    echo "################################################################"
-    echo "#"
-    echo "# Welcome to the Setup process for a new Computer Systems"
-    echo "#"
-    echo "################################################################"
+	echo "################################################################"
+	echo "#"
+	echo "# Welcome to the Setup process for a new Computer Systems"
+	echo "#"
+	echo "################################################################"
+}
+
+function install_homebrew () {
+	echo "################################################################"
+	echo "#"
+	echo "# Installing Homebrew"
+	echo "#"
+	echo "################################################################"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/felix/.zprofile
+	eval "$(/usr/local/bin/brew shellenv)"
+}
+
+function empty_space () {
+	echo " "
+	echo " "
+	echo " "
 }
 
 welcome_msg
 
-echo $platform
+empty_space
+
+install_homebrew
